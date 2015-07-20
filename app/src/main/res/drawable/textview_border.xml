@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!--为TextView添加一个矩形边框-->
+    <solid android:color="#ffffff" />
+    <stroke android:width="1px" android:color="#cdcdcd" />
+</shape>

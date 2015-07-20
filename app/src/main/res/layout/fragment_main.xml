@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <com.thrc.beeway.widgets.MyViewPager
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></com.thrc.beeway.widgets.MyViewPager>
+
+    <RadioGroup
+        android:id="@+id/main_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_tab_home"
+            style="@style/main_tab_item"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawableTop="@drawable/main_tab_home_bg"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/main_tab_foot"
+            style="@style/main_tab_item"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_tab_image_bg"
+            android:text="足迹" />
+
+
+        <RadioButton
+            android:id="@+id/main_tab_add"
+            android:layout_width="40dp"
+
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_team_add"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/main_tab_message"
+            style="@style/main_tab_item"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_tab_mes_bg"
+            android:text="消息" />
+
+        <RadioButton
+            android:id="@+id/main_tab_myself"
+            style="@style/main_tab_item"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/main_tab_essay_bg"
+            android:text="我的" />
+    </RadioGroup>
+
+</LinearLayout>

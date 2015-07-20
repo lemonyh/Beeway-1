@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/footprint_title"
+        layout="@layout/footprint_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" />
+    <!--足迹文本域-->
+    <EditText
+      android:layout_below="@id/footprint_title"
+        android:id="@+id/iss_footprint_test"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:cursorVisible="true"
+        android:gravity="top|left"
+        android:hint="这一刻的想法..."
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textCursorDrawable="@null" />
+    <!--小横线-->
+    <View
+        android:id="@+id/horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/iss_footprint_test"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/add_biaoqian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/horizontal_line1"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/biaoqian"
+        android:paddingTop="10dp"
+        android:text="添加标签:" />
+
+
+    <TextView
+        android:id="@+id/label_meishi"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_biaoqian"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="美食" />
+
+    <TextView
+        android:id="@+id/label_gouwu"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_biaoqian"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/label_meishi"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="购物" />
+
+    <TextView
+        android:id="@+id/label_jingse"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_biaoqian"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/label_gouwu"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="景色" />
+
+    <TextView
+        android:id="@+id/label_gankai"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_biaoqian"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/label_jingse"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="感慨" />
+
+    <TextView
+        android:id="@+id/label_tucao"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/add_biaoqian"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/label_gankai"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="吐槽" />
+
+
+    <TextView
+        android:id="@+id/label_tese"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_meishi"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="特色" />
+
+    <TextView
+        android:id="@+id/label_qita"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/label_meishi"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/label_tese"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="吐槽" />
+    <!--小横线-->
+    <View
+        android:id="@+id/horizontal_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/label_tese"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#cdcdcd" />
+
+    <ImageButton
+        android:id="@+id/add_photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/horizontal_line2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_border"
+        android:src="@drawable/ic_add_photo" />
+
+    <!--小横线-->
+    <View
+        android:id="@+id/horizontal_line3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/add_photo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/users_address"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/horizontal_line3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/address_label"
+        android:drawableRight="@drawable/ic_go"
+        android:gravity="center"
+        android:text="湖南省长沙市岳麓区谷苑路" />
+
+
+</RelativeLayout>

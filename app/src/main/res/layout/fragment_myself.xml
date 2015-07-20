@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_myself"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@drawable/memberbg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <ImageView
+                    android:id="@+id/iv_userimg"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/photo_over"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="姓名"
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_userimg"
+                    android:layout_toLeftOf="@+id/iv_userimg"
+                    android:layout_toStartOf="@+id/iv_userimg" />
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="男 大黄蜂"
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv_username"
+                    android:layout_toRightOf="@+id/tv_username"
+                    android:layout_toEndOf="@+id/tv_username" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_request"
+                    android:id="@+id/My_checkin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:text="请求"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:id="@+id/My_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="消息"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:id="@+id/My_list_sql"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  本地Sqllite管理"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_foot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的足迹"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_qiudashang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  求打赏"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_baozang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的宝藏"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_qianbao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的钱包"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:padding="4dp" />
+
+            <LinearLayout
+                android:id="@+id/My_list_shoucang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的收藏"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_erweima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的二维码"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_fengyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  我的蜂友"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:padding="4dp" />
+            <LinearLayout
+                android:id="@+id/My_list_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  设置"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  修改个人信息"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_updatepsw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  修改密码"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/My_list_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_tab_background"
+                android:paddingBottom="0dp"
+                android:paddingLeft="15dp" >
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_list_txt_background"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="  退出"
+                    android:textColor="#666666"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_quxiao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="取消" />
+
+    <View
+        android:id="@+id/horizontal_line1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@+id/tv_quxiao"
+        android:layout_gravity="center_horizontal"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/tv_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/horizontal_line1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="从手机相册选择" />
+
+    <View
+        android:id="@+id/horizontal_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/tv_select_photo"
+        android:layout_gravity="center_horizontal"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/horizontal_line2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="拍照" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/footprint_title"
+        layout="@layout/footprint_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp" />
+
+    <com.thrc.beeway.widgets.pullrefreshview.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/footprint_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="loading……" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_footprint_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/footprint_title">
+
+    </ListView>
+
+
+</RelativeLayout>

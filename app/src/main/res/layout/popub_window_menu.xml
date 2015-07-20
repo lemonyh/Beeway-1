@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_popup_window_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_start_click"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_richscan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_richscan"
+        android:text="  扫一扫" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="2dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/tv_add_fengyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_add_fengyou"
+        android:text="  添加蜂友" />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="2dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/tv_iss_footprint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_iss_footprint"
+        android:text="  发布足迹" />
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="2dp"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:id="@+id/tv_maibao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_maibao"
+        android:text="  埋下宝藏" />
+
+
+</LinearLayout>
