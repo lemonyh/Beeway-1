@@ -34,7 +34,6 @@
                     android:layout_width="fill_parent"
                     android:layout_height="55dip"
                     android:layout_gravity="bottom"
-                    android:background="#33000000"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -42,7 +41,7 @@
                         android:id="@+id/tv_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="中国家庭院校园区域名字体现"
+                        android:text="图片简介"
                         android:textColor="#ffffff" />
 
                     <LinearLayout
@@ -96,7 +95,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="18dp"
                             android:text="打赏"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -117,7 +116,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="18dp"
                             android:text="寻宝"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -138,7 +137,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="18dp"
                             android:text="发现"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -159,7 +158,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="18dp"
                             android:text="我在"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
                     </LinearLayout>
                 </TableRow>
             </TableLayout>
