@@ -33,6 +33,7 @@ public abstract  class BasePager {
         this.context = context;
         slidingMenu = ((MainActivity)context).getSlidingMenu();
         view = initView();
+        Syytem.out.out.print("yuhao");
     }
     /*
 	 * 返回initView方法中创建的View对象
